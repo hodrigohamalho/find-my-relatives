@@ -1,6 +1,5 @@
 {
-  "name": "find-my-relatives",
+  "name": "helloWorld",
   "integrations": {},
-  "type": "angular",
-  "id": "c5f8bfc6"
+  "type": "ionic-angular"
 }
