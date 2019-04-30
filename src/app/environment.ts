@@ -15,14 +15,12 @@ export class Environment {
 
   public prod = {
     apiUrl: 'http://www.mocky.io/v2',
-    baseUrl: 'http://www.mocky.io',
-    appFacebookID: 2125320834418888,
+    baseUrl: 'http://www.mocky.io'
   };
 
   public desenv = {
     apiUrl: 'http://www.mocky.io/v2',
-    baseUrl: 'http://www.mocky.io',
-    appFacebookID: 240537426696177,
+    baseUrl: 'http://www.mocky.io'
   };
 
   public getApiUrl(): string {
@@ -31,10 +29,6 @@ export class Environment {
 
   public getBaseUrl(): string {
     return (this.production ? this.prod.baseUrl : this.desenv.baseUrl);
-  }
-
-  public getAppFacebookID(): number {
-    return (this.production ? this.prod.appFacebookID : this.desenv.appFacebookID);
   }
 
   public getAppDeviceNative(): Boolean {
